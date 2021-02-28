@@ -22,10 +22,4 @@ public class PaymentProcessingService {
 			return paymentTransactionRepository.save(department);
 		}
 		
-		public void saveTransactionStatusById(Long transactionId, String status)
-		{
-			log.info("updating the transaction status");
-			paymentTransactionRepository.updateTransactionStatus(transactionId,status);
-		}
-		
 }

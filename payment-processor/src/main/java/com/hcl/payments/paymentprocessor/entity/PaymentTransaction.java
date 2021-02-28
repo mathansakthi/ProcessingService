@@ -10,7 +10,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.Digits;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -53,7 +52,6 @@ public class PaymentTransaction {
 	private String creditorName;
 	private String creditorAddress;
 	
-	
 	private String debtorAgentIdentifier;
 	private String creditorAgentIdentifier; 
 	private String paymentCurrency;
@@ -62,6 +60,5 @@ public class PaymentTransaction {
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date valueDate;
 	private String remittanceInfo;
-	private String status;
 
 }

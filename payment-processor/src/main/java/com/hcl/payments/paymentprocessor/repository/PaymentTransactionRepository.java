@@ -18,7 +18,4 @@ import com.hcl.payments.paymentprocessor.entity.PaymentTransaction;
 @Repository
 public interface PaymentTransactionRepository extends JpaRepository<PaymentTransaction, Long> {
 	
-	@Modifying(flushAutomatically = true)
-	@Query("update PaymentTransaction pt set pt.status =:status where pt.transactionId =:transactionId")
-	void updateTransactionStatus(@Param("transactionId") Long transactionId, @Param("status") String status);
 }
